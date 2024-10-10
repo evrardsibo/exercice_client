@@ -1,6 +1,6 @@
 import random
 import pygame
-
+from Button import Button
 from children import Children
 from city_dictionnary import random_name
 
@@ -38,6 +38,8 @@ clock = pygame.time.Clock()
 screen = pygame.display.set_mode((1920,1080))
 pygame.display.set_caption("Père Noël Simulator")
 
+font = pygame.font.Font(None, 64)
+
 screen.fill((255,0,0))
 
 running = True
@@ -46,6 +48,7 @@ while running:
     clicked = False
 
     pygame.draw.rect(screen, (200,200,200), (0, 0, 1920, 128))
+    screen.blit(font.render("L'Atelier du Père Noël", True, (255,255,255)), (650, 32))
 
     if position[0] >= 1870 and position[1] <= 50:
         pygame.draw.rect(screen, (255,0,0), (1870, 0, 50, 50))
