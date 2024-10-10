@@ -3,6 +3,7 @@ city_dictionnary = {
                     'Bruxelles':3,
                     'Paris':10,
                     'Seville':15,
+                    'Pekin':40,
                     'Seoul':50
 }
 
