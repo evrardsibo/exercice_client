@@ -5,7 +5,7 @@ class Children :
         self.adress = True
 
     def add_wich(self , wish) :
-        
+        self.wich.append(wish)
 
     def display_wish(self) :
         for wish in self.wich :
