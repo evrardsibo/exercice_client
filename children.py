@@ -1,18 +1,22 @@
+from Address import Address
+
+
 class Children :
     def __init__(self , name) :
         self.name = name
-        self.wich = [ ]
-        self.adress = True
+        self.wish = [ ]
+        self.address = Address()
 
-    def add_wich(self , wish) :
-        self.wich.append(wish)
+
+    def add_wish(self , wish) :
+        self.wish.append(wish)
 
     def display_wish(self) :
-        for wish in self.wich :
+        for wish in self.wish :
             print( f"Your wish is {wish}" )
 
-
-child = Children( "test" )
-child.add_wich( "car" )
-child.add_wich( "poppy" )
-child.display_wish( )
+#
+# child = Children( "test" )
+# child.add_wish( "car" )
+# child.add_wish( "poppy" )
+# child.display_wish( )

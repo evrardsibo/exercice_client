@@ -18,3 +18,11 @@ street_list =[
     '95 Boulevard Saint-Michel', '14 Chemin des Cyprès', "14 Rue de l'Avenir", '14 Rue de la Paix',
     '28 Digue de Cuesmes', '87 Boulevard des Nations', '93 Impasse des Fleurs', "77 Boulevard de l'Océan"
 ]
+
+random_name=[
+    'Martin', 'Bernard', 'Dubois', 'Thomas', 'Robert', 'Richard', 'Petit', 'Durand', 'Leroy', 'Moreau',
+    'Simon', 'Laurent', 'Lefebvre', 'Michel', 'Garcia', 'David', 'Bertrand', 'Roux', 'Vincent', 'Fournier',
+    'Morel', 'Girard', 'André', 'Lefèvre', 'Mercier', 'Dupont', 'Lambert', 'Bonnet', 'François', 'Martineau',
+    'Brun', 'Gauthier', 'Roger', 'Chevalier', 'Lefort', 'Barbier', 'Pires', 'Millet', 'Mathieu', 'Gaillard',
+    'Perrin', 'Vidal', 'Caron', 'Garnier', 'Meyer', 'Boucher', 'Roy', 'Lemoine', 'Marchand', 'Noël'
+]
