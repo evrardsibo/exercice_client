@@ -47,8 +47,10 @@ while running:
     position = pygame.mouse.get_pos()
     clicked = False
 
-    pygame.draw.rect(screen, (200,200,200), (0, 0, 1920, 128))
-    screen.blit(font.render("L'Atelier du Père Noël", True, (255,255,255)), (650, 32))
+    pygame.draw.rect(screen, (145,145,145), (0, 0, 1920, 128))
+    pygame.draw.rect(screen, (200, 200, 200), (550, 0, 1920, 128))
+    screen.blit(font.render("L'Atelier du Père Noël", True, (255,255,255)), (42, 40))
+    ## ajouter girlande
 
     if position[0] >= 1870 and position[1] <= 50:
         pygame.draw.rect(screen, (255,0,0), (1870, 0, 50, 50))
