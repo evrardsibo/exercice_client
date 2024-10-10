@@ -37,8 +37,13 @@ screen.fill((255,0,0))
 
 running = True
 while running:
-    for event in pygame.event.get():
 
+    for event in pygame.event.get():
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            print ("Clic")
+
+        if event.type == pygame.KEYDOWN:
+            print ("quelqu'un a appuyé sur une touche")
 
         if event.type == pygame.QUIT:
             running = False
@@ -46,4 +51,6 @@ while running:
 
     pygame.display.flip()
     clock.tick(60)
+
+print ('test')
 

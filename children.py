@@ -21,11 +21,3 @@ class Children :
             print( f"gift delivered !" )
         else :
             print( f"gift not delivered !" )
-
-
-#
-child = Children()
-child.check_delivery( True )
-# child.add_wish( "car" )
-# child.add_wish( "poppy" )
-# child.display_wish( )
