@@ -1,16 +1,15 @@
 import pygame
 import random
 from city_dictionnary import random_name
-
 from children import Children
 
 children_list=[]
 order_of_delivery=[]
 
-def create_children_and_add_to_list(name):
+def create_children_and_add_to_list(name): # créée une instance d'enfant avec le nom en paramètre, et l'ajoute à la liste d'enfants
     children_list.append(Children(name))
 
-def add_to_delivery_list(distance):
+def add_to_delivery_list(distance): #### renvoie une liste de tous les enfants qui sont à la distance donnée en paramètre
     temporary_list = []
     for child in children_list:
         if child.address.distance_from_north_pole == distance:
@@ -48,7 +47,7 @@ print (children_list[1].name)
 print (len(order_of_delivery))
 
 for child in order_of_delivery:
-    print (child.name)
+    print (child.address.distance_from_north_pole)
 
 
 
