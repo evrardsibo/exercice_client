@@ -1,4 +1,5 @@
 import random
+
 import pygame
 
 from children import Children
@@ -30,7 +31,7 @@ for distance in range(1, len(children_list) + 1):  ##trie la liste des enfants p
 pygame.init()
 
 clock = pygame.time.Clock()
-screen = pygame.display.set_mode((800,600))
+screen = pygame.display.set_mode( (500 , 100) )
 pygame.display.set_caption("Père Noël Simulator")
 
 screen.fill((255,0,0))
@@ -39,11 +40,11 @@ running = True
 while running:
 
     for event in pygame.event.get():
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            print ("Clic")
-
-        if event.type == pygame.KEYDOWN:
-            print ("quelqu'un a appuyé sur une touche")
+        if event.type == pygame.KEYDOWN :
+            if event.key == pygame.K_0 :
+                print( "Hey, you pressed the key, '0'!" )
+            if event.key == pygame.K_1 :
+                print( "Doing whatever")
 
         if event.type == pygame.QUIT:
             running = False
