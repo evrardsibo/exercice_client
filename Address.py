@@ -1,5 +1,5 @@
-from city_dictionnary import city_dictionnary
 import random
+from city_dictionnary import city_dictionnary,street_list
 
 class Address:
     def __init__(self,street_name):

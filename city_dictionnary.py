@@ -5,3 +5,5 @@ city_dictionnary = {
                     'Seville':15,
                     'Seoul':50
 }
+
+street_list :[]
