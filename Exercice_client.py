@@ -47,8 +47,9 @@ print (children_list[1].name)
 
 print (len(order_of_delivery))
 
+
 for child in order_of_delivery:
-    print (child.name)
+    print (child.address.distance_from_north_pole)
 
 
 
