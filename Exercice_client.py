@@ -29,28 +29,39 @@ for distance in range(1, len(children_list) + 1):  ##trie la liste des enfants p
 
 pygame.init()
 
+pygame.mixer.init()
+pygame.mixer.music.load("christmas1.mp3")
+pygame.mixer.music.set_volume(1)
+pygame.mixer.music.play()
+
 clock = pygame.time.Clock()
-screen = pygame.display.set_mode((800,600))
+screen = pygame.display.set_mode((1920,1080))
 pygame.display.set_caption("Père Noël Simulator")
 
 screen.fill((255,0,0))
 
 running = True
 while running:
+    position = pygame.mouse.get_pos()
+    clicked = False
+
+    pygame.draw.rect(screen, (200,200,200), (0, 0, 1920, 128))
+
+    if position[0] >= 1870 and position[1] <= 50:
+        pygame.draw.rect(screen, (255,0,0), (1870, 0, 50, 50))
+    else:
+        pygame.draw.rect(screen, (128,128,128), (1870, 0, 50, 50))
 
     for event in pygame.event.get():
         if event.type == pygame.MOUSEBUTTONDOWN:
-            print ("Clic")
+            clicked = True
 
         if event.type == pygame.KEYDOWN:
             print ("quelqu'un a appuyé sur une touche")
 
-        if event.type == pygame.QUIT:
+        if event.type == pygame.QUIT or (clicked and position[0] >= 1870 and position[1] <= 50):
             running = False
 
 
     pygame.display.flip()
     clock.tick(60)
-
-print ('test')
-
